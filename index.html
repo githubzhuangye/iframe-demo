@@ -38,7 +38,7 @@
         
         console.log('修改页面信息');
         console.log('$(window.frames].window.frames[0].document.body)', $(window.frames['iframe1'].window.frames[0].document.body))
-        $(window.frames['iframe1'].window.frames[0].document.body).append("<div>插入文本</div>");
+        $(window.frames['iframe1'].window.frames[0].document.body).html("<div>插入文本</div>");
     }
 </script>
 </html>
