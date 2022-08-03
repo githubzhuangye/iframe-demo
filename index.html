@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="width: 100%; height: 100%;">
+<body style="width: 100vw; height: 100vhh;">
     <div id="parent">父页面</div>
     <div>
         <iframe
@@ -35,6 +35,10 @@
         console.log('window.frames[iframe1].window.frames[0].document', window.frames['iframe1'].window.frames[0].document);
         console.log('window.frames[iframe1].window.frames[1]', window.frames['iframe1'].window.frames[1]);
         console.log('window.frames[iframe1].window.frames[1].document', window.frames['iframe1'].window.frames[1].document);
+        
+        console.log('修改页面信息');
+        console.log('$(window.frames].window.frames[0].document.body)', $(window.frames['iframe1'].window.frames[0].document.body))
+        $(window.frames['iframe1'].window.frames[0].document.body).append("<div>插入文本</div>");
     }
 </script>
 </html>
