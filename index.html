@@ -23,13 +23,18 @@
     window.onload= ready;
     function ready() { 
         // console.log('q23 window.frames[0]', window.frames['iframe1'].window.frames[0].location = "https://www.runoob.com/");
-        console.log('q23 window.frames[0]', window.frames['iframe1'][0].window.document);
-        console.log('window.frames[.window.frames[0].contentWindow', window.frames['iframe1'][0].contentWindow);
+        // console.log('q23 window.frames[0]', window.frames['iframe1'][0].window.document);
+        // console.log('window.frames[.window.frames[0].contentWindow', window.frames['iframe1'][0].contentWindow);
         // console.log('window.frames[.window.frames[0].document.body', window.frames['iframe1'].window.frames[0].contentWindow);
         
-        // $('#iframe1').on('load', function() {
-        //     console.log(window.frames);
-        // });
+        console.log('window', window);
+        console.log('window.frames', window.frames);
+        console.log('window.frames[iframe1]', window.frames['iframe1']);
+        console.log('window.frames[iframe1].document', window.frames['iframe1'].document);
+        console.log('window.frames[iframe1].window.frames[0]', window.frames['iframe1'].window.frames[0]);
+        console.log('window.frames[iframe1].window.frames[0].document', window.frames['iframe1'].window.frames[0].document);
+        console.log('window.frames[iframe1].window.frames[1]', window.frames['iframe1'].window.frames[1]);
+        console.log('window.frames[iframe1].window.frames[1].document', window.frames['iframe1'].window.frames[1].document);
     }
 </script>
 </html>
